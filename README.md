@@ -34,6 +34,6 @@ The `containsDuplicates` method takes an `int` array as input and returns a bool
 
 The `getAverage` method takes an `int` array and returns a double with the average value of the array. It throws an exception if the input array is empty.
 
-## getAverageOfAverages
+## findLeastAverageArray
 
-The `getAverageOfAverages` method takes an array of array of `int`s and returns the array with the least average value out of all the arrays. It throws if the input array is empty.
+The `findLeastAverageArray` method takes an array of array of `int`s and returns the array with the least average value out of all the arrays. It throws if the input array is empty.
