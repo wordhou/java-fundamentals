@@ -56,7 +56,7 @@ public class ArraysLoopsTest {
     }
 
     @Test
-    public void testGetAverageOfAverages() {
+    public void testGetLeastAverage() {
        double delta = 1e-5;
 
         int[][] input1 = {
@@ -80,14 +80,14 @@ public class ArraysLoopsTest {
         int[][] empty = {};
 
         assertEquals("works on arrays of singletons",
-                ArraysLoops.getAverageOfAverages(input1), 3.0, delta);
+                ArraysLoops.findLeastAverageArray(input1), input1[0]);
         assertEquals("works on arrays of singletons",
-                ArraysLoops.getAverageOfAverages(input2), 14.0, delta);
+                ArraysLoops.findLeastAverageArray(input2), input2[2]);
         assertThrows("throws if array is empty", Exception.class, () -> {
-            ArraysLoops.getAverageOfAverages(empty);
+            ArraysLoops.findLeastAverageArray(empty);
         });
         assertThrows("throws if any array inside is empty", Exception.class, () -> {
-            ArraysLoops.getAverageOfAverages(bad);
+            ArraysLoops.findLeastAverageArray(bad);
         });
     }
 }

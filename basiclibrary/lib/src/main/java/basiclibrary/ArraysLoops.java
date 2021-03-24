@@ -37,13 +37,20 @@ public class ArraysLoops {
         return sum / array.length;
     }
 
-    public static double getAverageOfAverages(int[][] arrayOfArrays) {
+    public static int[] findLeastAverageArray(int[][] arrayOfArrays) {
         if (arrayOfArrays.length == 0) throw new IndexOutOfBoundsException("Array can't be empty");
-        double sum = 0;
+
+        int[] leastAverageArray = arrayOfArrays[0];
+        double leastAverage = getAverage(arrayOfArrays[0]); // Initialize least average to the first array's average
+        double avg;
         for (int[] array : arrayOfArrays) {
-            sum = sum + getAverage(array);
+            avg = getAverage(array);
+            if (avg < leastAverage) {
+               leastAverage = avg;
+               leastAverageArray = array;
+            }
         }
 
-        return sum / arrayOfArrays.length;
+        return leastAverageArray;
     }
 }
