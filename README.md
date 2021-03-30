@@ -13,3 +13,7 @@ Lab work and notes from CodeFellows 401 Java course
 # Lab 03: Maps, primitives, and file I/O
 
 [Summary](./basiclibrary/docs/lab3-maps-primitives-file-io.md) of the code written.
+
+# Lab 06: Inheritance and composition, part 1
+
+[README](./docs/inheritance.md) about the classes written.
