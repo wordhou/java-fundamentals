@@ -16,4 +16,4 @@ Lab work and notes from CodeFellows 401 Java course
 
 # Lab 06: Inheritance and composition, part 1
 
-[README](./docs/inheritance.md) about the classes written.
+[README](./inheritance/README.md) about the classes written.

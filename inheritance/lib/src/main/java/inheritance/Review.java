@@ -1,19 +1,25 @@
 package inheritance;
 
-
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 
 public class Review {
     User user;
     int rating;
     @Nonnull
     String text;
+    @Nullable
+    String movie;
 
     public Review(User user, String text) throws InvalidInputException {
-        this(user, text, -1);
+        this(user, text, -1, null);
     }
 
     public Review(User user, String text, int rating) throws InvalidInputException {
+        this(user, text, rating, null);
+    }
+
+    public Review(User user, String text, int rating, String movie) throws InvalidInputException {
         this.user = user;
         this.text = text;
         validateRating(rating);
